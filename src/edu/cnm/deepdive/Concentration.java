@@ -11,6 +11,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * This Concentration class, inherits the javaFX Application class,
+ * set the stage with the class, resource bundle, FXML, application title,
+ * and stage the show.
+ */
 public class Concentration extends Application {
 
   private static final String APP_TITLE_KEY = "appTitle";
@@ -25,6 +30,7 @@ public class Concentration extends Application {
     stage.setResizable(false);
     stage.setScene(scene);
     stage.show();
+
   }
 
   public static void main(String[] args) {

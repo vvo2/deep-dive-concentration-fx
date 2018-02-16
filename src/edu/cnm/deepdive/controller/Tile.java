@@ -58,6 +58,14 @@ public class Tile {
     return tiles;
   }
 
+  /**
+   *This method load the image, with exception for invalid file entries.
+   *
+   * @param directory         Directory for the image
+   * @param pattern           Pattern of the string to match lowercase
+   * @return                  Return URL directory and String pattern
+   * @throws URISyntaxException     Throw a syntax exeception for invalid url
+   */
   private static Image[] load(URL directory, String pattern) throws URISyntaxException {
     ClassLoader loader = Tile.class.getClassLoader();
     FilenameFilter filter = (d, f) -> f.toLowerCase().matches(pattern);

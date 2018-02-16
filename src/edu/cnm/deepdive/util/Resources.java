@@ -2,6 +2,7 @@ package edu.cnm.deepdive.util;
 
 /**
  * Resource-related constants used by multiple classes.
+ * Directories set for resources, images, layout, strings, and UI.
  */
 public class Resources {
 
