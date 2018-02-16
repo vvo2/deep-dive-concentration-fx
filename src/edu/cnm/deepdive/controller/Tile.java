@@ -17,10 +17,11 @@ import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import edu.cnm.deepdive.util.Resources;
-import javafx.scene.layout.Background;
 
 /**
- *
+ * Simple controller class supporting the <code>tile.fxml</code> layout. Static
+ * methods are included for loading the full set of tile images, and creating
+ * 2 instances of this class per image.
  */
 public class Tile {
 
@@ -29,10 +30,14 @@ public class Tile {
   private static final String LAYOUT_PATH = Resources.LAYOUT_DIRECTORY + "tile.fxml";
 
   /**
+   * Loads and returns a {@link List} of {@link ToggleButton} instances, 2 per
+   * source image. Each <code>ToggleButton</code> has 2 images: a blank one for
+   * the "back", and the loaded image for the "face".
    *
-   * @return
-   * @throws URISyntaxException
-   * @throws IOException
+   * @return                    {@link List} of {@link ToggleButton} instances.
+   * @throws URISyntaxException if the image directory is invalid.
+   * @throws IOException        if an image file (or the <code>tile.fxml</code>
+   *                            layout file) can't be read.
    */
   public static List<ToggleButton> getTiles() throws URISyntaxException, IOException {
     ClassLoader classLoader = Tile.class.getClassLoader();
