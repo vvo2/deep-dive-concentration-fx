@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox
+  xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="edu.cnm.deepdive.controller.Main">
+
+  <stylesheets>
+    <URL
+      value="@../styles/global.css" />
+  </stylesheets>
+
+  <MenuBar>
+
+    <menus>
+
+      <Menu text="%controlTitle">
+
+        <items>
+
+          <MenuItem
+            fx:id="newGame"
+            text="%newGameTitle" />
+
+          <MenuItem
+            fx:id="quit"
+            text="%quitTitle" />
+
+        </items>
+
+      </Menu>
+
+    </menus>
+
+  </MenuBar>
+
+  <FlowPane
+    fx:id="tileTable" />
+
+  <HBox
+    styleClass="tally">
+
+    <Text
+      fx:id="currentStatus"
+      text="%currentStatusFormat" />
+
+    <Text
+      fx:id="totalStatus"
+      text="%totalStatusFormat" />
+
+  </HBox>
+
+</VBox>

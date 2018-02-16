@@ -1,0 +1,44 @@
+MenuBar {
+  -fx-use-system-menu-bar: true;
+  -fx-padding: 0px 5px 1px 5px;
+}
+
+Menu, MenuItem {
+  -fx-padding: 2px 8px 2px 8px;
+}
+
+FlowPane {
+  -fx-column-halignment: center;
+  -fx-row-valignment: center;
+  -fx-orientation: horizontal;
+  -fx-pref-width: 872px;
+  -fx-pref-height: 728px;
+  -fx-hgap: 8px;
+  -fx-vgap: 8px;
+  -fx-padding: 8px;
+}
+
+ToggleButton.tile {
+  -fx-pref-width: 136px;
+  -fx-min-width: 136px;
+  -fx-pref-height: 136px;
+  -fx-min-height: 136px;
+  -fx-border-radius: 4px;
+  -fx-background-color: white;
+  -fx-border-color: black;
+  -fx-content-display: graphic-only;
+}
+
+ToggleButton.tile:disabled {
+  -fx-background-color: gray;
+}
+
+HBox.tally {
+  -fx-alignment: center;
+  -fx-padding: 8px 16px 8px 16px;
+  -fx-spacing: 32px;
+}
+
+HBox.tally Text {
+  -fx-font-size: 12pt;
+}
